@@ -6,14 +6,14 @@ $(document).ready(function() {
     console.log(randomNumber);
     $("#numberGoal").text(randomNumber);
 
-    var crystalNum = function() {
+    var starNum = function() {
         return Math.floor((Math.random() * 12) + 1);
     }
 
-    var redCrystal = crystalNum();
-    var blueCrystal = crystalNum();
-    var yellowCrystal = crystalNum();
-    var greenCrystal = crystalNum();
+    var redStar = crystalNum();
+    var blackStar = crystalNum();
+    var yellowStar = crystalNum();
+    var greenStar = crystalNum();
 
     var wins = 0;
     var losses = 0;

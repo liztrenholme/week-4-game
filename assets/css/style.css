@@ -1,0 +1,47 @@
+body {	
+	color: #fff;
+	background-color: #4E0B4D;
+	background-image: url("../../assets/images/martianchronicles.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: width 1000px height 800px;
+}
+
+h1 {
+	text-decoration: bolder;
+	font-size: 200%;
+}
+
+.instructions {
+	float: left;
+	width: 600px;
+}
+
+.stars {
+	width: 416px;
+	height: 103px;
+	float: left;
+	background-color: #fff;
+	display: inline-flex;
+}
+
+img {
+	border: #4E0B4D solid 1px;
+	margin: 1px;
+}
+
+.numberTarget {
+	float: left;
+	width: 100px;
+	height: 200px;
+	margin: 50px;
+}
+
+.score {
+	float: left;
+	width: 100px;
+	height: 200px;
+	margin: 50px;
+}
+
+

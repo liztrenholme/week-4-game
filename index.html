@@ -7,31 +7,34 @@
 	<title>Crystal Collector</title>
 </head>
 <body>
-	<h1>Crystal Collector!</h1>
-	<div class="instructions">
-		<p>A random number is assigned at the start of the game, and it is up to you to match that number by clicking on the different crystals to gain different, mystical numbers that add to your score!  Beware... you must get exactly the correct number or you will lose!</p>
-	</div>
-	<div class="score">
-		<div id="numberGoal"></div>
-		<div class="wins-losses">
-			<p>Wins: </p>
-			<div id="wins">0</div>
-			<p>Losses: </p>
-			<div id="losses">0</div>
+	<div class="container">
+		<div class="instructions">
+			<h1>Crystal Collector!</h1>
+			<p>A random number is assigned at the start of the game, and it is up to you to match that number by clicking on the different crystals to gain different, mystical numbers that add to your score!  Beware... you must get exactly the correct number or you will lose!</p>
+		</div>
+		<div class="numberTarget">
+			<div id="numberGoal"></div>
+			<div class="wins-losses">
+				<p>Wins: </p>
+				<div id="wins">0</div>
+				<p>Losses: </p>
+				<div id="losses">0</div>
+			</div>
+		</div>
+		<div class="stars">
+			<div id="redStar"><img src="assets/images/redstar.png" width="100px" height="100px"></div>
+			<div id="blackStar"><img src="assets/images/blackstar.png" width="100px" height="100px"></div>
+			<div id="yellowStar"><img src="assets/images/yellowstar.png" width="100px" height="100px"></div>
+			<div id="greenStar"><img src="assets/images/greenstar.png" width="100px" height="100px"></div>
+		</div>
+		<div class="score">
+			<p>Total score: </p>
+			<div id="score">0</div>
 		</div>
 	</div>
-	<div class="crystals">
-		<div id="redCrystal"><img src="assets/images/red.png"></div>
-		<div id="blueCrystal"><img src="assets/images/blue.png"></div>
-		<div id="yellowCrystal"><img src="assets/images/yellow.png"></div>
-		<div id="greenCrystal"><img src="assets/images/green.png"></div>
-	</div>
-	<div class="score">
-		<p>Total score: </p>
-		<div id="score">0</div>
-	</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" />
-<script src="assets/javascript/game.js" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" />
+	<script src="assets/javascript/game.js" />
 </body>
 </html>
