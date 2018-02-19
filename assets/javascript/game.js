@@ -4,17 +4,23 @@ var wins = 0;
 var losses = 0;
 var score = 0;
 
-//generates random number for each star
-var randomNumber = function() {
-    Math.floor((Math.random() * 120) + 1);
-    console.log(randomNumber);
+// generates random number for goal of game
+var randomNumber = Math.floor((Math.random() * 120) + 1);
     $("#numberGoal").text(randomNumber);
+
+// function to give each star its mystery number
+function starNum() {
+    return Math.floor((Math.random() * 12) + 1);
 }
 
-randomNumber();
-
-var starNum = function() {
-    return Math.floor((Math.random() * 12) + 1);
+// 
+function resetGame() {
+    randomNumber = Math.floor((Math.random() * 120) + 1);
+    $("#numberGoal").text(randomNumber);
+    redStar = starNum();
+    blackStar = starNum();
+    yellowStar = starNum();
+    greenStar = starNum();
 }
 
 var redStar = starNum();
@@ -29,7 +35,7 @@ var winOrLose = function () {
         $("#wins").text(wins);
         score = 0;
         $("#score").text(score);
-        //randomNumber();
+        resetGame();
     }
     else if (score > randomNumber) {
         alert("Oh noes!!!  Planet Earth has been destroyed!");
@@ -37,10 +43,11 @@ var winOrLose = function () {
         $("#losses").text(losses);
         score = 0;
         $("#score").text(score);
-        //randomNumber();
+        resetGame();
     }
-    if ((score === randomNumber) || (score > randomNumber)) {
-        randomNumber();
+
+   if ((score === randomNumber) || (score > randomNumber)) {
+         resetGame();
     }
 }
 

@@ -2,18 +2,19 @@ body {
 	color: #fff;
 	background-color: #4E0B4D;
 	background-image: url("../../assets/images/martianchronicles.jpg");
-	background-position: center;
+	background-position: 50% 50%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: width 1000px height 800px;
+	background-size: width 90%;
 }
 
 .container {
 	display: block;
-	left: auto;
-	right: auto;
+	position: 50% 50%;
 	margin: 80px;
-	width: 900px;
+	width: 90%;
+	height: 90hz;
+	border: black solid 5px;
 }
 
 p {
@@ -82,11 +83,38 @@ img {
 	font-size: 120%;
 }
 
-@media screen and (min-width: 780px) {
-    body {
-        background-size: 90%;
-    }
-    .container {
-    	width: 90%;
-    }
+
+@media screen and (max-width: 640px) {
+	body {
+		background-size: 100%; 
+		background-position: 0% 0%;
+	}
+}
+@media only screen and (max-width: 640px) {
+	h1 {
+		font-size: 150%;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.container {
+		margin: 2px;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.stars {
+		display: block;
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.instructions {
+		display: block;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 640px) {
+	#score, #wins, #losses, #numberGoal {
+		
+	}
 }
