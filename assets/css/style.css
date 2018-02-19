@@ -3,18 +3,34 @@ body {
 	background-color: #4E0B4D;
 	background-image: url("../../assets/images/martianchronicles.jpg");
 	background-position: center;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: width 1000px height 800px;
+}
+
+.container {
+	display: block;
+	left: auto;
+	right: auto;
+	margin: 80px;
+	width: 900px;
+}
+
+p {
+	color: #4E0B4D;
+	background-color: #97C6BD;
 }
 
 h1 {
 	text-decoration: bolder;
 	font-size: 200%;
+	margin: 20px;
 }
 
 .instructions {
 	float: left;
 	width: 600px;
+	opacity: .85;
 }
 
 .stars {
@@ -30,18 +46,47 @@ img {
 	margin: 1px;
 }
 
-.numberTarget {
+.goal {
+	background-color: #fff;
 	float: left;
-	width: 100px;
-	height: 200px;
+	color: #4E0B4D;
+	width: 50px;
+	height: 50px;
 	margin: 50px;
+	opacity: .85;
+}
+
+.numberTarget {
+	background-color: #fff;
+	float: left;
+	color: #4E0B4D;
+	width: 50px;
+	height: 120px;
+	margin: 50px;
+	opacity: .85;
 }
 
 .score {
+	background-color: #fff;
 	float: left;
-	width: 100px;
-	height: 200px;
+	color: #4E0B4D;
+	width: 90px;
+	height: 40px;
 	margin: 50px;
+	opacity: .85;
 }
 
+#score, #wins, #losses, #numberGoal {
+	text-align: center;
+	margin: 5px;
+	font-size: 120%;
+}
 
+@media screen and (min-width: 780px) {
+    body {
+        background-size: 90%;
+    }
+    .container {
+    	width: 90%;
+    }
+}
