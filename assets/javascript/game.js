@@ -13,7 +13,7 @@ function starNum() {
     return Math.floor((Math.random() * 12) + 1);
 }
 
-// 
+// starts new round after win or lose
 function resetGame() {
     randomNumber = Math.floor((Math.random() * 120) + 1);
     $("#numberGoal").text(randomNumber);
@@ -28,6 +28,7 @@ var blackStar = starNum();
 var yellowStar = starNum();
 var greenStar = starNum();
 
+// determines if user has won or lost round
 var winOrLose = function () {
     if (score === randomNumber) {
         alert("Yay!  You've saved Earth!");
@@ -43,18 +44,18 @@ var winOrLose = function () {
         $("#losses").text(losses);
         score = 0;
         $("#score").text(score);
-        resetGame();
+       resetGame();
     }
 
    if ((score === randomNumber) || (score > randomNumber)) {
-         resetGame();
+         resetGame(); 
+         
     }
 }
 
-//gem clicks and display to total score
+// star clicks and updates to score
 $("#redStar").on("click", function() {
     score = score + redStar;
-    console.log(score);
     $("#score").text(score);
     winOrLose();
 });

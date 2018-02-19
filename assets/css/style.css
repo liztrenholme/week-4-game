@@ -5,7 +5,7 @@ body {
 	background-position: 50% 50%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: width 90%;
+	background-size: width 95%;
 }
 
 .container {
@@ -14,7 +14,6 @@ body {
 	margin: 80px;
 	width: 90%;
 	height: 90hz;
-	border: black solid 5px;
 }
 
 p {
@@ -84,7 +83,7 @@ img {
 }
 
 
-@media screen and (max-width: 640px) {
+@media only screen and (max-width: 640px) {
 	body {
 		background-size: 100%; 
 		background-position: 0% 0%;
@@ -97,14 +96,16 @@ img {
 }
 @media only screen and (max-width: 640px) {
 	.container {
+		display: block;
+		height: 90hz;
 		margin: 2px;
 		width: 100%;
 	}
 }
 @media only screen and (max-width: 640px) {
-	.stars {
+	img {
 		display: block;
-		width: 90%;
+		width: 20%;
 	}
 }
 @media only screen and (max-width: 640px) {
