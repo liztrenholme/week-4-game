@@ -41,6 +41,86 @@ h1 {
 	clear: both;
 }
 
+.mission, #one, #two, #three, #four, #five {
+	white-space: nowrap;
+	overflow: hidden;
+	width: 90%;
+	animation: type 4s steps(60, end); 
+}
+
+span {
+  animation: blink 1s infinite;
+}
+
+#one {
+	opacity: 0;
+	-webkit-animation:  5s steps(60, end);
+	animation: type 5s steps(60, end);
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+#two {
+	opacity: 0;
+	-webkit-animation:  5s steps(60, end);
+	animation: type 5s steps(60, end);
+	-webkit-animation-delay: 6s;
+	animation-delay: 6s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+#three {
+	opacity: 0;
+	-webkit-animation:  5s steps(60, end);
+	animation: type 5s steps(60, end);
+	-webkit-animation-delay: 12s;
+	animation-delay: 12s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+#four {
+	opacity: 0;
+	-webkit-animation:  5s steps(60, end);
+	animation: type 5s steps(60, end);
+	-webkit-animation-delay: 17s;
+	animation-delay: 17s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+#five {
+	opacity: 0;
+	-webkit-animation:  5s steps(60, end);
+	animation: type 5s steps(60, end);
+	-webkit-animation-delay: 22s;
+	animation-delay: 22s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@keyframes type {
+	0% {
+		width: 0;
+	}
+	1% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes blink {
+	to{
+		opacity: 0;
+	}
+}
+
+
 .stars {
 	width: 416px;
 	height: 103px;
