@@ -23,6 +23,7 @@ function resetGame() {
     greenStar = starNum();
 }
 
+// assigning random numbers to the stars by calling the starNum function
 var redStar = starNum();
 var blackStar = starNum();
 var yellowStar = starNum();
@@ -44,11 +45,11 @@ var winOrLose = function () {
         $("#losses").text(losses);
         score = 0;
         $("#score").text(score);
-       resetGame();
+        resetGame();
     }
 
    if ((score === randomNumber) || (score > randomNumber)) {
-         resetGame(); 
+        resetGame(); 
          
     }
 }

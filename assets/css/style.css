@@ -41,6 +41,7 @@ h1 {
 	clear: both;
 }
 
+/* typing animation */
 .mission, #one, #two, #three, #four, #five {
 	white-space: nowrap;
 	overflow: hidden;
@@ -180,6 +181,7 @@ img {
 }
 
 
+/* optimization for mobile view - still needs work */
 @media only screen and (max-width: 640px) {
 	body {
 		background-image: url("../../assets/images/martianchroniclesmobile.jpg");
