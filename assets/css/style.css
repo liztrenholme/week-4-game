@@ -77,8 +77,8 @@ span {
 	opacity: 0;
 	-webkit-animation:  5s steps(60, end);
 	animation: type 5s steps(60, end);
-	-webkit-animation-delay: 10s;
-	animation-delay: 10s;
+	-webkit-animation-delay: 9s;
+	animation-delay: 9s;
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
@@ -87,8 +87,8 @@ span {
 	opacity: 0;
 	-webkit-animation:  5s steps(60, end);
 	animation: type 5s steps(60, end);
-	-webkit-animation-delay: 15s;
-	animation-delay: 15s;
+	-webkit-animation-delay: 14s;
+	animation-delay: 14s;
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
@@ -97,8 +97,8 @@ span {
 	opacity: 0;
 	-webkit-animation:  5s steps(60, end);
 	animation: type 5s steps(60, end);
-	-webkit-animation-delay: 20s;
-	animation-delay: 20s;
+	-webkit-animation-delay: 19s;
+	animation-delay: 19s;
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
