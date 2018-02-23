@@ -5,7 +5,7 @@ var losses = 0;
 var score = 0;
 
 // generates random number for goal of game
-var randomNumber = Math.floor((Math.random() * 120) + 1);
+var randomNumber = Math.floor((Math.random() * 120) + 19);
     $("#numberGoal").text(randomNumber);
 
 // function to give each star its mystery number
@@ -15,7 +15,7 @@ function starNum() {
 
 // starts new round after win or lose
 function resetGame() {
-    randomNumber = Math.floor((Math.random() * 120) + 1);
+    randomNumber = Math.floor((Math.random() * 120) + 19);
     $("#numberGoal").text(randomNumber);
     redStar = starNum();
     blackStar = starNum();
