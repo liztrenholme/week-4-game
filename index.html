@@ -26,32 +26,38 @@
             </div>
         </div>
         <!-- <div class="row"> -->
-        <div class="grid-container-numbers">
-            <div class="grid-item">
-                <div class="goal">
-                    <p>Goal: </p>
-                    <div id="numberGoal">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="grid-container-numbers">
+                    <div class="grid-item item-goal">
+                        <div class="goal">
+                            <p>Goal: </p>
+                            <div id="numberGoal">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item numberTarget">
+                        <div class="wins">
+                            <p>Wins: </p>
+                            <div id="wins">0</div>
+                        </div>
+                    </div>
+                    <div class="grid-item numberTarget">
+                        <div class="losses">
+                            <p>Losses: </p>
+                            <div id="losses">0</div>
+                        </div>
+                    </div>
+                    <div class="grid-item item-score">
+                        <div class="score">
+                            <p>Score: </p>
+                            <div id="score">0</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="grid-item numberTarget">
-                <div class="wins">
-                    <p>Wins: </p>
-                    <div id="wins">0</div>
-                </div>
-            </div>
-            <div class="grid-item numberTarget">
-                <div class="losses">
-                    <p>Losses: </p>
-                    <div id="losses">0</div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="score">
-                    <p>Score: </p>
-                    <div id="score">0</div>
-                </div>
-            </div>
+            <div class="col-md-2"></div>
         </div>
         <div class="row">
             <div class="col-md-2"></div>
@@ -71,11 +77,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-2"></div>
-            </div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script src="assets/javascript/game.js"></script>
+            <div class="col-md-2"></div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>

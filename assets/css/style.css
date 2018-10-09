@@ -37,7 +37,19 @@ h1 {
 
 .grid-container-numbers {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto auto;
+    margin: 2% 1% 1%;
+    width: 90%;
+  }
+
+  .item-score {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .item-goal {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
   .grid-container-stars {
@@ -45,6 +57,7 @@ h1 {
     grid-template-columns: auto auto auto auto;
     background-color: #fff;
     opacity: .7;
+    margin: 1%;
   }
 
 /* typing animation */
