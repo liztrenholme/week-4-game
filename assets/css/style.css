@@ -171,6 +171,7 @@ img {
 #numberGoal {
     text-align: center;
     font-size: 230%;
+    font-family: 'Audiowide', cursive;
 }
 
 
@@ -186,5 +187,11 @@ img {
     }
     h1 {
         font-size: 150%;
+    }
+    .instructions {
+        padding: 1%;
+        background-color: #97C6BD;
+        width: 90%;
+        opacity: .9;
     }
 }
