@@ -1,47 +1,81 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
-	<link href="https://fonts.googleapis.com/css?family=Changa:300" rel="stylesheet" />
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-	<title>Star Collector</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Changa:300" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Star Collector</title>
 </head>
+
 <body>
-	<div class="container">
-		<div class="instructions">
-			<h1>Star Collector!</h1>
-			<p class="mission" id="one">A random number is assigned at the start of the game, and it </p>
-			<p class="mission" id="two">is up to you to match that goal by clicking on the different </p>
-			<p class="mission" id="three">stars in order to gain mystical numbers that add to your </p>
-			<p class="mission" id="four">score!  Beware... you must match the score number to the goal </p>
-			<p class="mission" id="five">number exactly, or the Martians will destroy planet Earth!<span>|</span></p>
-		</div>
-		<div class="goal"><p>Goal: </p>
-			<div id="numberGoal"> 
-			</div>
-			<div class="numberTarget">
-				<div class="wins-losses">
-					<p>Wins: </p>
-					<div id="wins">0</div>
-					<p>Losses: </p>
-					<div id="losses">0</div>
-				</div>
-			</div>
-		</div>
-		<div class="stars">
-				<div id="redStar"><img src="assets/images/redstar.png" width="100px" height="100px"></div>
-				<div id="blackStar"><img src="assets/images/blackstar.png" width="100px" height="100px"></div>
-				<div id="yellowStar"><img src="assets/images/yellowstar.png" width="100px" height="100px"></div>
-				<div id="greenStar"><img src="assets/images/greenstar.png" width="100px" height="100px"></div>
-		</div>
-		<div class="score">
-			<p>Score: </p>
-			<div id="score">0</div>
-		</div>
-	</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="assets/javascript/game.js"></script>
-	</body>
-	</html>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-9 instructions">
+                <h1>Star Collector!</h1>
+                <p class="mission" id="one">A random number is assigned at the start of the game, and it </p>
+                <p class="mission" id="two">is up to you to match that goal by clicking on the different </p>
+                <p class="mission" id="three">stars in order to gain mystical numbers that add to your </p>
+                <p class="mission" id="four">score! Beware... you must match the score number to the goal </p>
+                <p class="mission" id="five">number exactly, or the Martians will destroy planet Earth!<span>|</span></p>
+            </div>
+        </div>
+        <!-- <div class="row"> -->
+        <div class="grid-container-numbers">
+            <div class="grid-item">
+                <div class="goal">
+                    <p>Goal: </p>
+                    <div id="numberGoal">
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item numberTarget">
+                <div class="wins">
+                    <p>Wins: </p>
+                    <div id="wins">0</div>
+                </div>
+            </div>
+            <div class="grid-item numberTarget">
+                <div class="losses">
+                    <p>Losses: </p>
+                    <div id="losses">0</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="score">
+                    <p>Score: </p>
+                    <div id="score">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="grid-container-stars">
+                    <div class="grid-item">
+                        <div id="redStar"><img src="assets/images/redstar.png" width="100px" height="100px"></div>
+                    </div>
+                    <div class="grid-item">
+                        <div id="blackStar"><img src="assets/images/blackstar.png" width="100px" height="100px"></div>
+                    </div>
+                    <div class="grid-item">
+                        <div id="yellowStar"><img src="assets/images/yellowstar.png" width="100px" height="100px"></div>
+                    </div>
+                    <div class="grid-item">
+                        <div id="greenStar"><img src="assets/images/greenstar.png" width="100px" height="100px"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
