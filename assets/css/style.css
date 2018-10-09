@@ -180,6 +180,9 @@ img {
 /* optimization for mobile view - still needs work */
 
 @media only screen and (max-width: 640px) {
+    .container{
+        width: 95%;
+    }
     body {
         background-image: url("../../assets/images/martianchroniclesmobile.jpg");
         background-position: 0% 0%;
@@ -190,8 +193,59 @@ img {
     }
     .instructions {
         padding: 1%;
+        margin: 2% 1% 1% 5%;
         background-color: #97C6BD;
-        width: 90%;
+        width: 100%;
         opacity: .9;
+        font-size: 80%;
+    }
+    #one {
+        opacity: 0;
+        -webkit-animation: 5s steps(60, end);
+        animation: type 5s steps(60, end);
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    
+    #two {
+        opacity: 0;
+        -webkit-animation: 5s steps(60, end);
+        animation: type 5s steps(60, end);
+        -webkit-animation-delay: 5s;
+        animation-delay: 6s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    
+    #three {
+        opacity: 0;
+        -webkit-animation: 5s steps(60, end);
+        animation: type 5s steps(60, end);
+        -webkit-animation-delay: 9s;
+        animation-delay: 11s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    
+    #four {
+        opacity: 0;
+        -webkit-animation: 5s steps(60, end);
+        animation: type 5s steps(60, end);
+        -webkit-animation-delay: 13s;
+        animation-delay: 16s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    
+    #five {
+        opacity: 0;
+        -webkit-animation: 5s steps(60, end);
+        animation: type 5s steps(60, end);
+        -webkit-animation-delay: 17s;
+        animation-delay: 21s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
     }
 }
